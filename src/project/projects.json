@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "name": "Remind Bot",
+    "uri": "https://github.com/dcwds/remind-bot",
+    "description": "A discord bot that allows users to set reminders.",
+    "tech": ["TypeScript", "Discord.js", "Docker"]
+  },
+  {
+    "id": 1,
+    "name": "Todos",
+    "uri": "https://github.com/dcwds/todo",
+    "description": "Make a todo list that supports filtering by completion status.",
+    "tech": ["TypeScript", "React", "Redux", "Tailwind CSS"]
+  },
+  {
+    "id": 2,
+    "name": "Pokédex",
+    "uri": "https://github.com/dcwds/pokedex",
+    "description": "Read the lore of the first generation of Pokémon.",
+    "tech": ["TypeScript", "React", "Redux", "Emotion"]
+  }
+]
