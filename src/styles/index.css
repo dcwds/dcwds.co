@@ -10,7 +10,7 @@
   }
 
   a {
-    @apply text-blue-600;
+    @apply text-blue-600 font-semibold;
   }
 
   h1,
@@ -42,5 +42,27 @@
 
   .block h2 {
     @apply mb-6 md:mb-8;
+  }
+
+  .btn {
+    @apply py-3 px-5 font-semibold text-xs text-gray-500 border-solid border-4 border-gray-300 select-none rounded-full transition-colors;
+  }
+
+  .btn:hover {
+    @apply text-white bg-blue-600 border-blue-600;
+  }
+
+  .icon {
+    @apply block p-2;
+  }
+
+  .icon svg {
+    @apply fill-gray transition-colors;
+
+    width: 24px;
+  }
+
+  .icon:hover svg {
+    @apply fill-blue;
   }
 }

@@ -8,6 +8,9 @@ module.exports = {
     colors: {
       blue: colors.blue,
       gray: colors.blueGray,
+      darkGray: colors.coolGray,
+      white: colors.white,
+      black: colors.black,
     },
     fontSize: {
       xs: ["0.75rem", "1rem"],
@@ -17,6 +20,10 @@ module.exports = {
       xl: ["1.25rem", "2.25rem"],
       xxl: ["2rem", "1.75"],
     },
+    fill: (theme) => ({
+      gray: theme("colors.gray.400"),
+      blue: theme("colors.blue.600"),
+    }),
     extend: {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
