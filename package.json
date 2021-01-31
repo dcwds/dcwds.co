@@ -1,1 +1,30 @@
-{"name":"dcwds.co","version":"1.0.0","private":true,"description":"dcwds.co","author":"dcwds","keywords":["gatsby"],"scripts":{"develop":"gatsby develop","start":"gatsby develop","build":"gatsby build","serve":"gatsby serve","clean":"gatsby clean"},"dependencies":{"gatsby":"^2.26.1","gatsby-plugin-manifest":"^2.11.0","gatsby-plugin-postcss":"^3.6.0","gatsby-plugin-react-helmet":"^3.9.0","postcss":"^8.2.4","react":"^16.13.1","react-dom":"^16.13.1","react-helmet":"^6.1.0"}}
+{
+  "name": "dcwds.co",
+  "version": "1.0.0",
+  "private": true,
+  "description": "dcwds.co",
+  "author": "dcwds",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.26.1",
+    "gatsby-plugin-manifest": "^2.11.0",
+    "gatsby-plugin-postcss": "^3.6.0",
+    "gatsby-plugin-react-helmet": "^3.9.0",
+    "postcss": "^8.2.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.0.2"
+  }
+}
