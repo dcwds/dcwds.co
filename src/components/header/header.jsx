@@ -1,3 +1,5 @@
+import React from "react"
+
 const Header = () => (
   <header className="py-4 md:py-8">
     <a href="/">

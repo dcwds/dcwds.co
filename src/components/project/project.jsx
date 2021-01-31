@@ -1,12 +1,6 @@
-type ProjectProps = {
-  id: number
-  name: string
-  uri: string
-  description: string
-  tech: string[]
-}
+import React from "react"
 
-const Project = ({ name, uri, description, tech }: ProjectProps) => (
+const Project = ({ name, uri, description, tech }) => (
   <div className="mb-6 md:mb-8">
     <a href={uri}>
       <h3 className="mb-1">{name}</h3>
