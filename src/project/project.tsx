@@ -12,7 +12,7 @@ const Project = ({ name, uri, description, tech }: ProjectProps) => (
       <h3 className="mb-1">{name}</h3>
     </a>
     <p className="mb-1">{description}</p>
-    <ul className="flex text-xs">
+    <ul className="flex text-xs text-gray-600">
       {tech.map((t) => (
         <li className="mr-3">{t}</li>
       ))}

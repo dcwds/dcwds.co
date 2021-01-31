@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Remind Bot",
     "uri": "https://github.com/dcwds/remind-bot",
-    "description": "A discord bot that allows users to set reminders.",
+    "description": "A Discord bot that allows users to set reminders.",
     "tech": ["TypeScript", "Discord.js", "Docker"]
   },
   {
