@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: "https://dcwds.co",
     title: "dcwds.co",
   },
   plugins: [
