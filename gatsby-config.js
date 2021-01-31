@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
+    title: "Dalton Woods",
     siteUrl: "https://dcwds.co",
-    title: "dcwds.co",
+    description: "Front-end developer located in Virginia, US.",
   },
   plugins: [
     "gatsby-plugin-postcss",

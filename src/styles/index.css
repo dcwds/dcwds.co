@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply text-gray-700;
+    @apply text-gray-600;
 
     font-size: 115%;
   }
@@ -32,7 +32,15 @@
 }
 
 @layer components {
-  .content-block p {
+  .paragraphs p {
     @apply mb-4;
+  }
+
+  .block {
+    @apply py-6;
+  }
+
+  .block h2 {
+    @apply mb-6 md:mb-8;
   }
 }
