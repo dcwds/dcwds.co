@@ -11,5 +11,12 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://dcwds.co",
+        policy: [{ userAgent: "*", disallow: ["/"] }],
+      },
+    },
   ],
-};
+}
