@@ -8,7 +8,7 @@ const IndexPage = () => (
   <Layout>
     <main>
       <section className="py-8 md:py-24">
-        <h1 className="font-semibold md:font-medium text-gray-800">
+        <h1 className="font-semibold text-gray-800">
           Hello! I'm Dalton, a front-end developer based in{" "}
           <span role="img" aria-label="pine tree">
             🌲

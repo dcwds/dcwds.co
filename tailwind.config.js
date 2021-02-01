@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors")
 
 module.exports = {
   purge: ["./src/**/*.{js,jsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     colors: {
       blue: colors.blue,
@@ -11,6 +11,7 @@ module.exports = {
       darkGray: colors.coolGray,
       white: colors.white,
       black: colors.black,
+      dark: "#12161a",
     },
     fontSize: {
       xs: ["0.75rem", "1rem"],

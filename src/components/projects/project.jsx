@@ -6,7 +6,7 @@ const Project = ({ name, uri, description, tech }) => (
       <h3 className="mb-1">{name}</h3>
     </a>
     <p className="mb-2">{description}</p>
-    <ul className="flex text-xs text-gray-600">
+    <ul className="flex text-xs text-gray-500">
       {tech.map((t) => (
         <li className="mr-3" key={t.toLowerCase()}>
           {t}

@@ -4,13 +4,19 @@
 
 @layer base {
   html {
-    @apply text-gray-600;
-
     font-size: 115%;
   }
 
+  body {
+    @apply bg-white text-gray-600 dark:text-gray-400 dark:bg-dark transition-colors;
+  }
+
   a {
-    @apply text-blue-600 font-semibold;
+    @apply text-blue-600 font-semibold transition-colors;
+  }
+
+  button {
+    @apply outline-none select-none;
   }
 
   h1,
@@ -19,7 +25,7 @@
   h4,
   h5,
   h6 {
-    @apply font-semibold text-gray-900;
+    @apply font-semibold text-gray-900 dark:text-white transition-colors;
   }
 
   h1 {
@@ -45,7 +51,7 @@
   }
 
   .btn {
-    @apply py-3 px-5 font-semibold text-xs text-gray-500 border-solid border-4 border-gray-300 select-none rounded-full transition-colors;
+    @apply py-3 px-5 font-semibold text-xs text-gray-500 border-solid border-4 border-gray-300 dark:border-gray-700 select-none rounded-full transition-colors;
   }
 
   .btn:hover {
