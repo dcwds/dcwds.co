@@ -4,14 +4,11 @@ export const MODE_DARK = "dark"
 export const MODE_LIGHT = "light"
 
 const getColorMode = () => {
-  // Check local storage for color mode. Check for localStorage so build
-  // doesn't fail on Netlify.
-  if (localStorage) {
-    const persistedColorPreference = localStorage.getItem("color-mode")
+  // Check local storage for color mode.
+  const persistedColorPreference = window.localStorage.getItem("color-mode")
 
-    if (persistedColorPreference) {
-      return persistedColorPreference
-    }
+  if (persistedColorPreference) {
+    return persistedColorPreference
   }
 
   // Check for color mode OS preference.
@@ -29,11 +26,8 @@ const useColorMode = () => {
   const [colorMode, setColorMode] = useState(getColorMode)
 
   useEffect(() => {
-    // Persist to local storage. Check for localStorage so build doesn't
-    // fail on Netlify.
-    if (localStorage) {
-      localStorage.setItem("color-mode", colorMode)
-    }
+    // Persist to local storage.
+    window.localStorage.setItem("color-mode", colorMode)
 
     // Add appropriate color class to HTML tag.
     document.documentElement.classList.add(colorMode)
