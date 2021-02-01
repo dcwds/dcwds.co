@@ -5,6 +5,7 @@ module.exports = {
     description: "Front-end developer located in Virginia, US.",
   },
   plugins: [
+    "gatsby-plugin-preact",
     "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     {
