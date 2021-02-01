@@ -3,7 +3,6 @@ import Helmet from "react-helmet"
 import Header from "./header"
 import Footer from "./footer"
 import gatsbyConfig from "../../gatsby-config"
-import "../styles/index.css"
 
 const { siteMetadata } = gatsbyConfig
 

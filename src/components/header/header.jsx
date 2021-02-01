@@ -13,6 +13,17 @@ const Header = () => {
     const newColorMode = colorMode === "dark" ? "light" : "dark"
 
     setColorMode(newColorMode)
+
+    // Check for window so Gatsby doesn't fail on build.
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("color-mode", newColorMode)
+
+      document.documentElement.classList.add(newColorMode)
+
+      document.documentElement.classList.remove(
+        newColorMode === "dark" ? "light" : "dark"
+      )
+    }
   }
 
   return (

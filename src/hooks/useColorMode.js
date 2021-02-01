@@ -1,21 +1,27 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
+
+const getColorMode = () => {
+  // Check for window so Gatsby doesn't fail on build.
+  if (typeof window !== "undefined") {
+    const persistedColorMode = window.localStorage.getItem("color-mode")
+    const preferredColorMode = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light"
+
+    if (persistedColorMode) {
+      return persistedColorMode
+    } else if (!persistedColorMode && preferredColorMode) {
+      return preferredColorMode
+    } else {
+      // Default to dark color mode.
+      return "dark"
+    }
+  }
+}
 
 const useColorMode = () => {
-  const [colorMode, setColorMode] = useState("dark")
-
-  useEffect(() => {
-    // Check for window so Gatsby doesn't fail on build.
-    if (typeof window !== "undefined") {
-      // Persist to local storage.
-      window.localStorage.setItem("color-mode", colorMode)
-    }
-
-    document.documentElement.classList.add(colorMode)
-
-    document.documentElement.classList.remove(
-      colorMode === "dark" ? "light" : "dark"
-    )
-  }, [colorMode, setColorMode])
+  const [colorMode, setColorMode] = useState(getColorMode)
 
   return [colorMode, setColorMode]
 }
