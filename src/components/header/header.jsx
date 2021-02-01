@@ -34,12 +34,20 @@ const Header = () => {
 
       <ul className="flex items-center space-x-3">
         <li>
-          <a className="icon" href="https://twitter.com/daltonwoods">
+          <a
+            className="icon"
+            href="https://twitter.com/daltonwoods"
+            aria-label="Twitter"
+          >
             <TwitterIcon />
           </a>
         </li>
         <li>
-          <a className="icon" href="https://github.com/dcwds">
+          <a
+            className="icon"
+            href="https://github.com/dcwds"
+            aria-label="GitHub"
+          >
             <GitHubIcon />
           </a>
         </li>
@@ -49,7 +57,10 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <button onClick={toggleColorMode}>
+          <button
+            onClick={toggleColorMode}
+            aria-label={`${colorMode === "dark" ? "light" : "dark"} mode`}
+          >
             {colorMode === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
           </button>
         </li>

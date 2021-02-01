@@ -11,7 +11,7 @@ module.exports = {
       darkGray: colors.coolGray,
       white: colors.white,
       black: colors.black,
-      dark: "#12161a",
+      dark: "#161c22",
     },
     fontSize: {
       xs: ["0.75rem", "1rem"],
@@ -27,7 +27,7 @@ module.exports = {
     }),
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
   },
