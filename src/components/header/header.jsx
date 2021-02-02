@@ -57,7 +57,9 @@ const Header = () => {
         </li>
         <li>
           <button
-            className={`icon icon-${nextColorMode}`}
+            className={`icon ${
+              nextColorMode === "dark" ? "icon-dark" : "icon-light"
+            }`}
             onClick={toggleColorMode}
             aria-label={`${nextColorMode} mode`}
           >
