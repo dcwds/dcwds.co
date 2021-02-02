@@ -14,11 +14,15 @@
   }
 
   a {
-    @apply text-blue-600 font-semibold transition-colors;
+    @apply text-blue-500 font-semibold transition-colors;
   }
 
   button {
-    @apply outline-none select-none;
+    @apply select-none;
+  }
+
+  button:focus {
+    @apply outline-none;
   }
 
   h1,
@@ -57,20 +61,31 @@
   }
 
   .btn:hover {
-    @apply text-white bg-blue-600 border-blue-600;
+    @apply text-white bg-blue-500 border-blue-500;
   }
 
   .icon {
-    @apply block p-2;
+    @apply block p-2 w-9;
   }
 
   .icon svg {
     @apply fill-gray transition-colors;
-
-    width: 24px;
   }
 
   .icon:hover svg {
     @apply fill-blue;
+  }
+
+  .icon-light,
+  .icon-dark {
+    @apply stroke-gray;
+  }
+
+  .icon-light:hover svg {
+    @apply fill-yellow stroke-yellow;
+  }
+
+  .icon-dark:hover svg {
+    @apply fill-purple stroke-purple;
   }
 }

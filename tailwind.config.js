@@ -9,6 +9,8 @@ module.exports = {
       blue: colors.blue,
       gray: colors.blueGray,
       darkGray: colors.coolGray,
+      yellow: colors.amber,
+      purple: colors.indigo,
       white: colors.white,
       black: colors.black,
       dark: "#161c22",
@@ -23,7 +25,14 @@ module.exports = {
     },
     fill: (theme) => ({
       gray: theme("colors.gray.400"),
-      blue: theme("colors.blue.600"),
+      blue: theme("colors.blue.500"),
+      yellow: theme("colors.yellow.300"),
+      purple: theme("colors.purple.400"),
+    }),
+    stroke: (theme) => ({
+      gray: theme("colors.gray.400"),
+      yellow: theme("colors.yellow.300"),
+      purple: theme("colors.purple.400"),
     }),
     extend: {
       fontFamily: {

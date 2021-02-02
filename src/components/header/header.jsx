@@ -8,20 +8,19 @@ import TwitterIcon from "../../assets/twitter-logo.svg"
 
 const Header = () => {
   const [colorMode, setColorMode] = useColorMode()
+  const nextColorMode = colorMode === "dark" ? "light" : "dark"
 
   const toggleColorMode = () => {
-    const newColorMode = colorMode === "dark" ? "light" : "dark"
-
-    setColorMode(newColorMode)
+    setColorMode(nextColorMode)
 
     // Check for window so Gatsby doesn't fail on build.
     if (typeof window !== "undefined") {
-      window.localStorage.setItem("color-mode", newColorMode)
+      window.localStorage.setItem("color-mode", nextColorMode)
 
-      document.documentElement.classList.add(newColorMode)
+      document.documentElement.classList.add(nextColorMode)
 
       document.documentElement.classList.remove(
-        newColorMode === "dark" ? "light" : "dark"
+        nextColorMode === "dark" ? "light" : "dark"
       )
     }
   }
@@ -52,14 +51,15 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a className="btn block" href="/">
+          <a className="btn" href="/">
             Resume
           </a>
         </li>
         <li>
           <button
+            className={`icon icon-${nextColorMode}`}
             onClick={toggleColorMode}
-            aria-label={`${colorMode === "dark" ? "light" : "dark"} mode`}
+            aria-label={`${nextColorMode} mode`}
           >
             {colorMode === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
           </button>
