@@ -24,11 +24,10 @@
     "gatsby-plugin-robots-txt": "^1.5.5",
     "postcss": "^8.2.4",
     "preact": "^10.4.0",
+    "preact-render-to-string": "^5.1.19",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
-  },
-  "devDependencies": {
-    "tailwindcss": "^2.0.2"
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "^2.1.2"
   }
 }
